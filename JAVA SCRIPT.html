@@ -1,0 +1,35 @@
+﻿<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> ALED </title>
+		<link href="css.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class = "film">
+			<h1 style = "text-align: center;"> The Story of Tau</h1>
+			<p style ="margin-top: 10px" id="container"></p>
+		</div></br>
+		
+		<form id = "motdepasse"> <!-- pour des boucles / lien avec js > mettre la balise form et id-->
+			<!-- CHAMP POUR LE FORMULAIRE-->
+			<span>Création de votre code confidentiel</span></br>
+			<input type="password" id="password" name="mdp" placeholder="Mot de passe"  onkeyup="show()"/> <!-- onclick à la place de onkeyup permet d'afficher qd on met une lettre-->
+			<p id = "myloc" style ="color : white; font-style: italic;">Minimum 8 chiffres</p>
+
+			<!-- ICONES -->
+			<div class = "passwordicon"> 
+				<i data-feather="eye"></i>
+				<i data-feather="eye-off"></i>
+			</div>
+			
+			<!-- ICONE SCRIPT-->
+			<script src="http://unpkg.com/feather-icons"></script>
+			<script>feather.replace()</script>
+		</form>
+		
+		<input type="button" id=boutonmdp value="Valider" onClick="f()"/>
+
+		<script src = "js.js"></script>
+	</body>
+</html>
