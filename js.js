@@ -60,3 +60,4 @@ container.innerText = "Votre série comprend " + numberSeasons + " saison(s) de 
 window.addEventListener('load', () => {
 	loader.classList.add('fondu-out');
 })*/
+//dezdze
