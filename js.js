@@ -41,24 +41,3 @@ eyeoff.addEventListener('click', () => {
 	passwordfield.type = "password";
 
 })
-
-
-let numberSeasons = 6
-let numberEpisode = 12
-let dureeepisode = 45.1
-let dureepub = 5.2
-
-tempstotal = ((dureepub*numberSeasons)+(dureeepisode*numberEpisode*numberSeasons))/60
-arr = Math.floor(tempstotal)
-tempsminute = (tempstotal - arr)*60 
-
-const container = document.getElementById("container");
-container.innerText = "Votre série comprend " + numberSeasons + " saison(s) de " + numberEpisode + " épisodes.\n"
-+ "Temps de visionnage pour cette série : " + arr + " heures et " + tempsminute.toFixed(0) + " minutes." ;
-
-/*const loader = document.querySelector('.loader');
-window.addEventListener('load', () => {
-	loader.classList.add('fondu-out');
-})*/
-//dezdze
-//
